@@ -29,26 +29,27 @@ export default function ContactList({ setSelectedContactId }) {
   }, []);
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th colSpan="3">Contact List</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
+    <>
+      <h3>Contact List</h3>
+      <p>Click on the contacts for more info</p>
+      <table>
+        <thead>
           <td>Name</td>
           <td>Email</td>
           <td>Phone</td>
-        </tr>
-        {contacts.map((contact) => {
-          return <ContactRow 
-          key={contact.id} 
-          contact={contact}
-          onClick={() => setSelectedContactId(contact.id)} 
-          ></ContactRow>;
-        })}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {contacts.map((contact) => {
+            return (
+              <ContactRow
+                key={contact.id}
+                contact={contact}
+                onClick={() => setSelectedContactId(contact.id)}
+              ></ContactRow>
+            );
+          })}
+        </tbody>
+      </table>
+    </>
   );
 }

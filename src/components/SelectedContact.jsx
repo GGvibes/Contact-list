@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 
 export default function SelectedContact({
   selectedContactId,
-  setSelectedContactId,
 }) {
   const [contact, setContact] = useState(null);
   console.log("Contact: ", contact);
@@ -27,7 +26,7 @@ export default function SelectedContact({
     <table>
       <thead>
         <tr>
-          <th>Contact</th>
+          <th colSpan={"2"}>Contact</th>
         </tr>
       </thead>
       <tbody>
