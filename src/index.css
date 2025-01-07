@@ -36,9 +36,7 @@ thead th:nth-child(3) {
 td {
   padding: 10px;
 }
-table {
-  border: 3px white;
-}
+
 
 tbody tr:nth-child(odd) {
   background-color: #050405;
@@ -48,7 +46,7 @@ tbody tr:nth-child(even) {
   background-color: #131213;
 }
 
-tr:hover {
+.contactList table tr:hover {
   color: #646cff;
   cursor: pointer;
 }

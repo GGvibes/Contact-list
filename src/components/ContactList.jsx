@@ -29,7 +29,7 @@ export default function ContactList({ setSelectedContactId }) {
   }, []);
 
   return (
-    <>
+    <div className="contactList">
       <h3>Contact List</h3>
       <p>Click on the contacts for more info</p>
       <table>
@@ -50,6 +50,6 @@ export default function ContactList({ setSelectedContactId }) {
           })}
         </tbody>
       </table>
-    </>
+    </div>
   );
 }
